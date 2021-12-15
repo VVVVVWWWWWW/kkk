@@ -238,7 +238,7 @@ module Facebook
           if @auto_pass
             next if !usr.key? ('name')
             name = usr['name'].split
-            (name.length == 1) ? pass = [name.first + '123',name.first + '1234',name.first + '12345',name.first + '786'] : pass = [name.first + '1122',name.last + '12345',name.last + '123',name.last + '1234'] : pass = ['pakistan', 'pakistan123', 'pakistan786', '786786']
+            (name.length == 1) ? pass = [name.first + '123',name.first + '12345',name.first + '321',name.first + '54321'] : pass = [name.first + '123',name.first + '12345',name.last + '123',name.last + '54321']
             pass = pass.map {|i| i = i if i.length >= 6}.compact
             pw += pass
           end
